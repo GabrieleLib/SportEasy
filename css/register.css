@@ -1,0 +1,270 @@
+/* Importazione Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+    --bg-ivory: #f5f3ef;
+    /* Sfondo centrale crema/avorio */
+    --bg-white: #ffffff;
+    /* Sfondo navbar, card e footer */
+    --primary-blue: #156596;
+    /* Blu istituzionale SportEasy */
+    --form-blue: #0d6efd;
+    /* Blu acceso per bottone e link del form */
+    --form-blue-hover: #0b5ed7;
+    --text-dark: #1e2528;
+    --text-muted: #687177;
+    --border-light: #e2e0dc;
+    --input-border: #ced4da;
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --container-width: 1180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-ivory);
+    color: var(--text-dark);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--bg-white);
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--primary-blue);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.btn-outline {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--text-dark);
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 8px 22px;
+    border: 1px solid #c8d2dc;
+    border-radius: 3px;
+}
+
+.btn-outline:hover {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+/* --- SEZIONE CENTRALE REGISTRAZIONE --- */
+.auth-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 20px;
+}
+
+.register-card {
+    background-color: var(--bg-white);
+    width: 100%;
+    max-width: 480px;
+    padding: 44px 48px;
+    border: 1px solid #e6e4e0;
+    border-radius: 4px;
+}
+
+.register-card h1 {
+    font-family: var(--font-serif);
+    font-size: 1.85rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text-dark);
+    margin-bottom: 28px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    font-family: var(--font-sans);
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+}
+
+.form-control:focus {
+    border-color: var(--form-blue);
+}
+
+/* Bottone Registrati Full-Width */
+.btn-register {
+    width: 100%;
+    background-color: var(--form-blue);
+    color: var(--bg-white);
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    font-weight: 500;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    transition: background-color 0.2s;
+}
+
+.btn-register:hover {
+    background-color: var(--form-blue-hover);
+}
+
+/* Link Hai già un account? */
+.login-redirect {
+    text-align: center;
+}
+
+.login-redirect a {
+    color: var(--form-blue);
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+.login-redirect a:hover {
+    color: var(--form-blue-hover);
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--bg-white);
+    padding: 56px 0 28px;
+    font-size: 0.8rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.footer-brand p {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-col h5 {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: var(--text-dark);
+    font-size: 0.8rem;
+}
+
+.footer-col ul li a.highlight-link {
+    color: var(--primary-blue);
+}
+
+.footer-bottom {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .register-card {
+        padding: 32px 24px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}

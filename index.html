@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportEasy - Home con Calendario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 1. Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">SportEasy</a>
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Servizi</a>
+                <a href="#">News</a>
+            </nav>
+            <a href="#" class="btn-outline">Login</a>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <span class="eyebrow">SPORTEASY • CENTRI SPORTIVI</span>
+                <h1>Il tuo sport.<br>Il tuo momento.</h1>
+            </div>
+            <div class="hero-right">
+                <p>Tennis, padel, calcio e basket.<br>Trova il campo per la tua prossima partita e vivi lo sport, a modo
+                    tuo.</p>
+                <a href="#" class="btn-primary">Registrati ora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Banner Full-Width -->
+    <section class="hero-banner">
+        <div class="container banner-content">
+            <p class="banner-quote">Lo spazio giusto per stare in gioco.</p>
+            <span class="banner-tags">TENNIS • PADEL • CALCIO • BASKET</span>
+        </div>
+    </section>
+
+    <!-- 4. Sezione Calendario (NUOVA) -->
+    <section class="calendar-section">
+        <div class="container">
+            <div class="calendar-wrapper">
+
+                <!-- Colonna 1: Intro -->
+                <div class="calendar-intro">
+                    <span class="eyebrow">PRENOTA IL TUO CAMPO</span>
+                    <h2>Quando vuoi<br>scendere in<br>campo?</h2>
+                    <p>Seleziona un giorno per la tua prossima partita, poi scegli il campo ideale per te.</p>
+                </div>
+
+                <!-- Colonna 2: Calendario Ottobre 2026 -->
+                <div class="calendar-widget">
+                    <div class="calendar-header">
+                        <button class="cal-nav-btn" aria-label="Mese precedente">‹</button>
+                        <span class="calendar-month">Ottobre 2026</span>
+                        <button class="cal-nav-btn" aria-label="Mese successivo">›</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <span class="day-name">LU</span>
+                        <span class="day-name">MA</span>
+                        <span class="day-name">ME</span>
+                        <span class="day-name">GI</span>
+                        <span class="day-name">VE</span>
+                        <span class="day-name">SA</span>
+                        <span class="day-name">DO</span>
+
+                        <!-- Giorni fine Settembre -->
+                        <span class="day muted">28</span>
+                        <span class="day muted">29</span>
+                        <span class="day muted">30</span>
+                        <!-- Giorni Ottobre -->
+                        <span class="day">1</span>
+                        <span class="day">2</span>
+                        <span class="day">3</span>
+                        <span class="day">4</span>
+
+                        <span class="day">5</span>
+                        <span class="day">6</span>
+                        <span class="day">7</span>
+                        <span class="day">8</span>
+                        <span class="day">9</span>
+                        <span class="day">10</span>
+                        <span class="day">11</span>
+
+                        <span class="day">12</span>
+                        <span class="day">13</span>
+                        <span class="day">14</span>
+                        <span class="day">15</span>
+                        <span class="day">16</span>
+                        <span class="day">17</span>
+                        <span class="day">18</span>
+
+                        <span class="day">19</span>
+                        <span class="day">20</span>
+                        <span class="day">21</span>
+                        <span class="day">22</span>
+                        <span class="day">23</span>
+                        <span class="day selected">24</span>
+                        <span class="day">25</span>
+
+                        <span class="day">26</span>
+                        <span class="day">27</span>
+                        <span class="day">28</span>
+                        <span class="day">29</span>
+                        <span class="day">30</span>
+                        <span class="day">31</span>
+                        <span class="day muted">1</span>
+                    </div>
+                </div>
+
+                <!-- Colonna 3: Box Data Selezionata -->
+                <div class="calendar-summary-card">
+                    <div class="calendar-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <span class="summary-label">DATA SELEZIONATA</span>
+                    <h3>Sabato 24<br>ottobre 2026</h3>
+                    <p>Esplora i nostri campi disponibili per la giornata scelta.</p>
+                    <a href="#campi" class="btn-primary">Scegli il campo</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Sezione Campi Sportivi (Griglia a 3 Card) -->
+    <main id="campi" class="sports-section">
+        <div class="container">
+
+            <div class="section-header">
+                <div>
+                    <span class="eyebrow">SCEGLI LA TUA PROSSIMA PARTITA</span>
+                    <h2>Un campo per ogni passione.</h2>
+                </div>
+                <p>Quattro sport, un unico punto d'incontro.<br>Scopri tutti i nostri campi.</p>
+            </div>
+
+            <!-- 01. Tennis -->
+            <div class="sport-category">
+                <div class="category-title-bar">
+                    <div class="category-title-group">
+                        <span class="category-number">01</span>
+                        <h3>Tennis</h3>
+                    </div>
+                    <a href="#" class="explore-link">Esplora i campi ↗</a>
+                </div>
+                <div class="cards-grid-3">
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=500&q=80"
+                            alt="Terra Rossa" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Terra Rossa</h4>
+                            <p class="card-desc">Terra battuta tradizionale all'aperto.</p>
+                            <p class="card-price">€ 45 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=500&q=80"
+                            alt="Campo Riviera" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Campo<br>Riviera</h4>
+                            <p class="card-desc">Superficie veloce con vista panoramica.</p>
+                            <p class="card-price">€ 50 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=500&q=80"
+                            alt="Arena Tennis" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Arena Tennis</h4>
+                            <p class="card-desc">Campo coperto per giocare in ogni stagione.</p>
+                            <p class="card-price">€ 60 / giorno</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 02. Padel -->
+            <div class="sport-category">
+                <div class="category-title-bar">
+                    <div class="category-title-group">
+                        <span class="category-number">02</span>
+                        <h3>Padel</h3>
+                    </div>
+                    <a href="#" class="explore-link">Esplora i campi ↗</a>
+                </div>
+                <div class="cards-grid-3">
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=500&q=80"
+                            alt="Padel Blu" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Padel Blu</h4>
+                            <p class="card-desc">Campo panoramico immerso nel verde.</p>
+                            <p class="card-price">€ 40 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=500&q=80"
+                            alt="La Vetrata" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">La Vetrata</h4>
+                            <p class="card-desc">Struttura coperta e ottima luminosità.</p>
+                            <p class="card-price">€ 45 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1509255502519-c13218b827a9?auto=format&fit=crop&w=500&q=80"
+                            alt="Padel Club" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Padel Club</h4>
+                            <p class="card-desc">Campo indoor perfetto anche in serale.</p>
+                            <p class="card-price">€ 50 / giorno</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 03. Calcio -->
+            <div class="sport-category">
+                <div class="category-title-bar">
+                    <div class="category-title-group">
+                        <span class="category-number">03</span>
+                        <h3>Calcio</h3>
+                    </div>
+                    <a href="#" class="explore-link">Esplora i campi ↗</a>
+                </div>
+                <div class="cards-grid-3">
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=500&q=80"
+                            alt="Campo Ulivi" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Campo Ulivi</h4>
+                            <p class="card-desc">Calcio a 5 in erba sintetica di ultima generazione.</p>
+                            <p class="card-price">€ 70 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=500&q=80"
+                            alt="Arena Verde" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Arena Verde</h4>
+                            <p class="card-desc">Spazi ampi per sfide a 7 con amici e tornei.</p>
+                            <p class="card-price">€ 90 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=500&q=80"
+                            alt="Campo Centrale" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Campo<br>Centrale</h4>
+                            <p class="card-desc">Manto perfetto e illuminazione notturna.</p>
+                            <p class="card-price">€ 110 / giorno</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 04. Basket -->
+            <div class="sport-category">
+                <div class="category-title-bar">
+                    <div class="category-title-group">
+                        <span class="category-number">04</span>
+                        <h3>Basket</h3>
+                    </div>
+                    <a href="#" class="explore-link">Esplora i campi ↗</a>
+                </div>
+                <div class="cards-grid-3">
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=500&q=80"
+                            alt="Playground" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Playground</h4>
+                            <p class="card-desc">Campo outdoor immerso nella natura.</p>
+                            <p class="card-price">€ 40 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=500&q=80"
+                            alt="Arena Parquet" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Arena Parquet</h4>
+                            <p class="card-desc">Parquet indoor professionale per partite agonistiche.</p>
+                            <p class="card-price">€ 65 / giorno</p>
+                        </div>
+                    </article>
+                    <article class="court-card">
+                        <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=500&q=80"
+                            alt="Urban Court" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Urban Court</h4>
+                            <p class="card-desc">Resina ad alto grip, perfetto per il 3 contro 3.</p>
+                            <p class="card-price">€ 50 / giorno</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 6. Sezione Info Azzurra -->
+    <section class="info-section">
+        <div class="container info-grid">
+            <div class="info-left">
+                <span class="eyebrow">ENTRA IN SPORTEASY</span>
+                <h2>La prossima<br>partita<br>inizia da te.</h2>
+                <a href="#" class="btn-primary">Registrati ora</a>
+            </div>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h4>Il tuo sport, in un posto solo.</h4>
+                    <p>Esplora i campi di tennis, padel, calcio e basket e scegli la tua prossima partita.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Più spazio alla tua passione.</h4>
+                    <p>Entra nella community SportEasy e porta lo sport al centro del tuo tempo libero.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Resta sempre in gioco.</h4>
+                    <p>Con la newsletter ricevi offerte esclusive e aggiornamenti direttamente nella tua casella di
+                        posta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Newsletter Dark -->
+    <section class="newsletter-section">
+        <div class="container newsletter-grid">
+            <div class="newsletter-left">
+                <span class="eyebrow">LA COMMUNITY SPORTEASY</span>
+                <h2>Unisciti alla nostra community</h2>
+                <p>Iscriviti alla newsletter per ricevere offerte esclusive e aggiornamenti da SportEasy direttamente
+                    nella tua casella di posta.</p>
+            </div>
+            <form class="newsletter-form">
+                <label for="email">La tua email</label>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Inserisci la tua email..." required>
+                    <button type="submit" class="btn-primary">Iscriviti</button>
+                </div>
+                <span class="form-hint">Novità e offerte direttamente nella tua inbox.</span>
+            </form>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">SportEasy</a>
+                    <p>Il tuo sport. Il tuo momento.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h5>SPORTEASY</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Servizi</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>I NOSTRI SPORT</h5>
+                        <ul>
+                            <li><a href="#">Tennis • Padel</a></li>
+                            <li><a href="#">Calcio • Basket</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>LA COMMUNITY</h5>
+                        <ul>
+                            <li><a href="#" class="highlight-link">Login</a></li>
+                            <li><a href="#" class="highlight-link">Registrati ora</a></li>
+                            <li><a href="#" class="highlight-link">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© SportEasy • Centri sportivi</span>
+                <span>Tennis • Padel • Calcio • Basket</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

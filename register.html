@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportEasy - Crea il tuo account</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">SportEasy</a>
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Servizi</a>
+                <a href="#">News</a>
+            </nav>
+            <a href="login.html" class="btn-outline">Login</a>
+        </div>
+    </header>
+
+    <!-- Sezione Centrale Form Registrazione -->
+    <main class="auth-section">
+        <div class="register-card">
+            <h1>Crea il tuo<br>account.</h1>
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="nome..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="cognome" name="cognome" class="form-control" placeholder="cognome..."
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="e-mail..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="telefono..."
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="username..."
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="password..."
+                        required>
+                </div>
+
+                <button type="submit" class="btn-register">Registrati</button>
+
+                <div class="login-redirect">
+                    <a href="login.html">Hai già un account? Accedi.</a>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">SportEasy</a>
+                    <p>Il tuo sport. Il tuo momento.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h5>SPORTEASY</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Servizi</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>I NOSTRI SPORT</h5>
+                        <ul>
+                            <li><a href="#">Tennis • Padel</a></li>
+                            <li><a href="#">Calcio • Basket</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>LA COMMUNITY</h5>
+                        <ul>
+                            <li><a href="login.html" class="highlight-link">Login</a></li>
+                            <li><a href="registrati.html" class="highlight-link">Registrati ora</a></li>
+                            <li><a href="#" class="highlight-link">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© SportEasy • Centro sportivo</span>
+                <span>Tennis, padel, calcio e basket.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
